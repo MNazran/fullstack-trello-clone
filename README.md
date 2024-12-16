@@ -6,3 +6,9 @@ Install dependencies:
 ```
 pnpm install
 ```
+
+## Run in development:
+Run the fullstack application in development mode:
+```
+pnpm dev
+```
