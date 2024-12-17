@@ -1,18 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "incremental": true,
-    "skipLibCheck": true,
-    "strictNullChecks": true,
-    "noImplicitAny": true,
-    "strictBindCallApply": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "paths": {
-      "@backend/*": ["./apps/backend/*"],
-      "@frontend/*": ["./apps/frontend/*"]
-    }
-  }
+    "target": "ESNext",
+    "module": "commonjs",
+    "strict": true
+  },
+  "exclude": ["node_modules"]
 }

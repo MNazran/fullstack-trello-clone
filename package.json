@@ -2,11 +2,30 @@
   "name": "fullstack-trello-clone",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev": "pnpm run --parallel dev"
+    "format": "prettier \"{apps,libs}/**/*.{js,ts,jsx,tsx,json,md}\" --ignore-path .gitignore",
+    "format:check": "pnpm format --check",
+    "format:write": "pnpm format --write",
+    "build": "pnpm exec nx run-many --target=build",
+    "tsc": "pnpm exec nx run-many --target=tsc",
+    "lint": "pnpm exec nx run-many --target=lint",
+    "validate": "pnpm format:write && pnpm tsc && pnpm lint && pnpm build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@nx/eslint": "20.2.2",
+    "@nx/next": "20.2.2",
+    "eslint": "~8.57.0",
+    "nx": "20.2.2",
+    "prettier": "^3.4.2",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "next": "14.2.16",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
 }

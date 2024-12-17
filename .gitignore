@@ -1,9 +1,9 @@
-# Node modules
-node_modules/
-
-# Build directories
-dist/
-build/
-
-# Environment variables
+node_modules
+dist
+build
+.next
 .env
+
+
+.nx/cache
+.nx/workspace-data
