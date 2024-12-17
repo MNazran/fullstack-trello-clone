@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
   "scripts": {
     "format": "prettier \"{apps,libs}/**/*.{js,ts,jsx,tsx,json,md}\" --ignore-path .gitignore",
     "format:check": "pnpm format --check",
