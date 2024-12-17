@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "@fullstack-trello-clone/api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
