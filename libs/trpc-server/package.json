@@ -1,5 +1,5 @@
 {
-  "name": "@fullstack-trello-clone/db",
+  "name": "@fullstack-trello-clone/trpc-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,11 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "prisma": "^6.0.1"
-  },
-  "dependencies": {
-    "@prisma/client": "6.0.1"
-  }
+  "license": "ISC"
 }
