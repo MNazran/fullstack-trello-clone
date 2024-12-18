@@ -1,7 +1,9 @@
+'use client'
+
+import { trpcClient } from '@fullstack-trello-clone/trpc-client/src/client'
+import Board from '@/components/Board'
+
 export default function Home() {
-  return (
-    <div>
-      <h1>Hello</h1>
-    </div>
-  )
+  const { data, isLoading } = trpcClient.auth.users.useQuery()
+  return <main>Hello {JSON.stringify(data)}</main>
 }
