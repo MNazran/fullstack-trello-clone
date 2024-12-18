@@ -10,6 +10,9 @@ interface ColumnProps {
 }
 
 export default function Column({ id, name, cards, setCards }: ColumnProps) {
+  // Calculate height directly based on the number of cards
+  const columnHeight = Math.max(120, cards.length * 80 + 40) // Adjust 80px per card and some padding
+
   function setCardsForColumn(sortedCards: CardType[], newColumnId: string) {
     setCards((prevCards: CardType[]) => {
       const newCards = [...prevCards]
@@ -27,7 +30,10 @@ export default function Column({ id, name, cards, setCards }: ColumnProps) {
   }
 
   return (
-    <div className="w-48 bg-white shadow-sm rounded-md p-2">
+    <div
+      className="w-48 bg-white shadow-sm rounded-md p-2 transition-all duration-200"
+      style={{ height: `${columnHeight}px` }} // Apply calculated height
+    >
       <h3>{name}</h3>
       <ReactSortable
         list={cards}
