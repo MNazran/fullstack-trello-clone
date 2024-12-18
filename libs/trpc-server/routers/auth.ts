@@ -1,3 +1,5 @@
+// #2. Defining the router
+
 import { publicProcedure, router } from '../trpc'
 
 import { prisma } from '@fullstack-trello-clone/db'

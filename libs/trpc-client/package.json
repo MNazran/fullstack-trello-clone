@@ -1,0 +1,25 @@
+{
+  "name": "@fullstack-trello-clone/trpc-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fullstack-trello-clone/trpc-server": "workspace:*",
+    "@tanstack/react-query": "^5.62.8",
+    "@trpc/client": "^10.45.2",
+    "@trpc/react-query": "^10.45.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "react": "^19.0.0"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  }
+}
