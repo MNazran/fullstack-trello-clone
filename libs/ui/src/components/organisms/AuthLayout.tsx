@@ -1,4 +1,3 @@
-import React = require('react')
 import { BaseComponent } from '../../util/types'
 
 export interface IAuthLayoutProps extends BaseComponent {

@@ -1,4 +1,3 @@
-import React = require('react')
 import { BaseComponent } from '../../util/types'
 
 export const Container = ({ children, className }: BaseComponent) => (

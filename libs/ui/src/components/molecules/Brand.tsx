@@ -2,7 +2,6 @@ import Link from 'next/link'
 
 import { DeveloperInfo } from './DeveloperInfo'
 import { cn } from '../../util'
-import React = require('react')
 
 export interface IBrandProps {}
 
