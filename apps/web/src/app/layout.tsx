@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { Provider } from '@fullstack-trello-clone/trpc-client/src/Provider'
 import { SessionProvider } from '@/components/SessionProvider'
+// import { SessionProvider } from '@fullstack-trello-clone/ui/src/components/molecules/SessionProvider'
+import { Container } from '@fullstack-trello-clone/ui/src/components/atoms/Container'
+import { Navbar } from '@fullstack-trello-clone/ui/src/components/organisms/Navbar'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -36,7 +39,9 @@ export default function RootLayout({
             </a>
           </header>
           <Provider>
-            <main className="p-8">{children}</main>
+            <Container>
+              <main>{children}</main>
+            </Container>
           </Provider>
         </SessionProvider>
       </body>

@@ -16,7 +16,10 @@ export default function Home() {
         Hello {JSON.stringify(data)}
         <div>
           {userData?.user ? (
-            <button onClick={() => signOut()}>signout</button>
+            <div>
+              <button onClick={() => signOut()}>signout</button>
+              <Board />
+            </div>
           ) : (
             <Link href="/signin">Sign in</Link>
           )}

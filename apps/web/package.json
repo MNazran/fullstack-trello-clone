@@ -10,6 +10,7 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
+    "@fullstack-trello-clone/ui": "workspace:*",
     "@fullstack-trello-clone/forms": "workspace:*",
     "@fullstack-trello-clone/networks": "workspace:*",
     "@fullstack-trello-clone/trpc-client": "workspace:*",
