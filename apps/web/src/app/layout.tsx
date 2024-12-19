@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { Provider } from '@fullstack-trello-clone/trpc-client/src/Provider'
+import { SessionProvider } from '@/components/SessionProvider'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -28,14 +29,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="bg-gray-200 p-4">
-          <a href="" className="logo">
-            Trello
-          </a>
-        </header>
-        <Provider>
-          <main className="p-8">{children}</main>
-        </Provider>
+        <SessionProvider>
+          <header className="bg-gray-200 p-4">
+            <a href="" className="logo">
+              Trello
+            </a>
+          </header>
+          <Provider>
+            <main className="p-8">{children}</main>
+          </Provider>
+        </SessionProvider>
       </body>
     </html>
   )

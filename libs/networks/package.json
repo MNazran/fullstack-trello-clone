@@ -1,0 +1,24 @@
+{
+  "name": "@fullstack-trello-clone/networks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullstack-trello-clone/trpc-client": "workspace:*",
+    "@fullstack-trello-clone/db": "workspace:*",
+    "@types/jsonwebtoken": "^9.0.7",
+    "next-auth": "^4.24.11"
+  },
+  "peerDependencies": {
+    "next-auth": "^4.24.11"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
+  }
+}

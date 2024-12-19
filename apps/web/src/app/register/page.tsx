@@ -2,6 +2,9 @@
 
 import { userFormRegister } from '@fullstack-trello-clone/forms/src/register'
 import { trpcClient } from '@fullstack-trello-clone/trpc-client/src/client'
+import { sign } from 'crypto'
+import { signIn } from 'next-auth/react'
+import { callbackify } from 'util'
 
 export default function Register() {
   const {
@@ -18,8 +21,17 @@ export default function Register() {
         // await mutateAsync(data) //trcp mutation and react hook form use same zod schema
 
         console.log('Submitted Data:', data)
-        const response = await mutateAsync(data)
-        console.log('Server Response:', response) // Log response here
+        // const response = await mutateAsync(data)
+        // console.log('Server Response:', response) // Log response here
+
+        const user = await mutateAsync(data)
+        if (user?.user) {
+          signIn('credentials', {
+            email: data.email,
+            password: data.password,
+            callbackUrl: '/',
+          })
+        }
       })}
     >
       <input {...register('email')} />
