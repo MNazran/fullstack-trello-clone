@@ -1,0 +1,18 @@
+{
+  "name": "@fullstack-trello-clone/forms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fullstack-trello-clone/db": "workspace:*",
+    "@hookform/resolvers": "^3.9.1",
+    "react-hook-form": "^7.54.1",
+    "zod": "^3.24.1"
+  }
+}

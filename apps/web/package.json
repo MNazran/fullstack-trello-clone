@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@fullstack-trello-clone/trpc-client": "workspace:*",
+    "@fullstack-trello-clone/forms": "workspace:*",
     "@tailwindcss/forms": "^0.5.9",
     "next": "15.1.0",
     "react": "^19.0.0",
