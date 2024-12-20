@@ -12,19 +12,17 @@ export default function Home() {
   console.log('Session Data:', userData)
   return (
     <div>
-      <main>
-        Hello {JSON.stringify(data)}
-        <div>
-          {userData?.user ? (
-            <div>
-              <button onClick={() => signOut()}>signout</button>
-              <Board />
-            </div>
-          ) : (
-            <Link href="/signin">Sign in</Link>
-          )}
-        </div>
-      </main>
+      {/* Hello {JSON.stringify(data)} */}
+      <div>
+        {userData?.user ? (
+          <div>
+            <button onClick={() => signOut()}>signout</button>
+            <Board />
+          </div>
+        ) : (
+          <Link href="/signin">Sign in</Link>
+        )}
+      </div>
 
       {/* <Board /> */}
     </div>

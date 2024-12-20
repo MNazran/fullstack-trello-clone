@@ -10,23 +10,23 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
-    "@fullstack-trello-clone/ui": "workspace:*",
     "@fullstack-trello-clone/forms": "workspace:*",
     "@fullstack-trello-clone/networks": "workspace:*",
     "@fullstack-trello-clone/trpc-client": "workspace:*",
+    "@fullstack-trello-clone/ui": "workspace:*",
     "@tailwindcss/forms": "^0.5.9",
     "next": "15.1.0",
     "next-auth": "^4.24.11",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-sortablejs": "^6.1.4",
     "sortablejs": "^1.15.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
     "eslint": "^9",
     "eslint-config-next": "15.1.0",
     "postcss": "^8",

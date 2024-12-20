@@ -33,15 +33,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SessionProvider>
-          <header className="bg-gray-200 p-4">
-            <a href="" className="logo">
-              Trello
-            </a>
-          </header>
           <Provider>
-            <Container>
-              <main>{children}</main>
-            </Container>
+            <header className="bg-gray-200 p-4">
+              <a href="/" className="logo">
+                Trello
+              </a>
+            </header>
+            <Container>{children}</Container>
           </Provider>
         </SessionProvider>
       </body>
