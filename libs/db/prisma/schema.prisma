@@ -23,6 +23,24 @@ model User {
     AuthProvider AuthProvider?
     Admin        Admin?
     Manager      Manager?
+    taskLists    TaskList[]   @relation("UserTaskLists")
+}
+
+model TaskList {
+  id        String      @id @default(cuid())
+  name      String
+  userId    String
+  user      User        @relation("UserTaskLists", fields: [userId], references: [uid])
+  taskItems TaskItem[]  @relation("TaskListItems")
+}
+
+model TaskItem {
+  id          String    @id @default(cuid())
+  content     String
+  index       Int
+  completed   Boolean   @default(false)
+  taskListId  String
+  taskList    TaskList  @relation("TaskListItems", fields: [taskListId], references: [id])
 }
 
 model Admin {
