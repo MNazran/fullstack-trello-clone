@@ -23,3 +23,27 @@ export const schemaRegisterWithProvider = z.object({
   image: z.string().optional(),
   type: z.nativeEnum(AuthProviderType),
 })
+
+// New schemas for task management
+export const schemaCreateList = z.object({
+  name: z.string(),
+})
+
+export const schemaCreateTask = z.object({
+  content: z.string(),
+  taskListId: z.string(),
+})
+
+export const schemaUpdateTaskOrder = z.array(
+  z.object({
+    id: z.string(),
+    index: z.number(),
+    taskListId: z.string(),
+  }),
+)
+
+export const schemaDeleteList = z.object({
+  id: z.string(), // The ID of the task list to delete
+})
+
+export const schemaDeleteTask = z.string() // The ID of the task to delete
