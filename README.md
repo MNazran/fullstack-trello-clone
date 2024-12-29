@@ -15,4 +15,14 @@ This is a full-stack application that replicates the core functionality of Trell
 
 
 
-**Getting Started:**
+## Getting Started
+
+### 1. Install Dependecies 
+``
+pnpm install
+``
+
+### 2. Set up environment variables
+Create a ``.env`` files within each application directory (``apps/web`` and ``apps/api``). <br>
+Add your environment variables to the respective ``.env`` files.
+
