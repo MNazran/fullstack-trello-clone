@@ -24,5 +24,5 @@ pnpm install
 
 ### 2. Set up environment variables
 Create a ``.env`` files within each application directory (``apps/web`` and ``apps/api``). <br>
-Add your environment variables to the respective ``.env`` files.
+Add environment variables to the respective ``.env`` files.
 
